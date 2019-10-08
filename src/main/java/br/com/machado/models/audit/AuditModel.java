@@ -34,6 +34,21 @@ public abstract class AuditModel implements Serializable  {
 	@Column(name = "atualizado_em", nullable = false)
 	@LastModifiedDate
 	private Date atualizadoEm;
-	
-	
+
+	public Date getCriadoEm() {
+		return criadoEm;
+	}
+
+	public void setCriadoEm(Date criadoEm) {
+		this.criadoEm = criadoEm;
+	}
+
+	public Date getAtualizadoEm() {
+		return atualizadoEm;
+	}
+
+	public void setAtualizadoEm(Date atualizadoEm) {
+		this.atualizadoEm = atualizadoEm;
+	}
+		
 }
