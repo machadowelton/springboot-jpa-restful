@@ -90,7 +90,7 @@ public class EmprestimoServiceImp extends SuperAbs<EmprestimoRepository> impleme
 						}).orElseThrow(() -> new NegocioException("Nenhum livro encontrado pelo id: " + idLivro));
 				emprestimo.getLivros().add(livro);
 				return repository.save(emprestimo);
-			}).orElseThrow(() -> new NegocioException("Nenhum emprestimo encontrado pelo id: " + idEmprestimo));
+			}).orElseThrow(() -> new NegocioException("Nenhum emprestimo encontrado pelo id: " + idEmprestimo));		
 	}
 
 }
