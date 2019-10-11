@@ -15,6 +15,8 @@ import br.com.machado.models.audit.AuditModel;
 @Entity
 public class Sessao extends AuditModel {
 	
+	private static final long serialVersionUID = -9099337855859914077L;
+
 	@Id
 	@GeneratedValue(
 	    strategy= GenerationType.AUTO, 
@@ -36,6 +38,9 @@ public class Sessao extends AuditModel {
 	@NotBlank
 	private String desLocalizacao;
 
+	
+	
+	
 	public Long getId() {
 		return id;
 	}
@@ -75,6 +80,49 @@ public class Sessao extends AuditModel {
 				+ ", desSessao=" + this.desSessao
 				+ ", desLocalizao=" + this.desLocalizacao
 				+ "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((desLocalizacao == null) ? 0 : desLocalizacao.hashCode());
+		result = prime * result + ((desSessao == null) ? 0 : desSessao.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((nomSessao == null) ? 0 : nomSessao.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Sessao other = (Sessao) obj;
+		if (desLocalizacao == null) {
+			if (other.desLocalizacao != null)
+				return false;
+		} else if (!desLocalizacao.equals(other.desLocalizacao))
+			return false;
+		if (desSessao == null) {
+			if (other.desSessao != null)
+				return false;
+		} else if (!desSessao.equals(other.desSessao))
+			return false;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		if (nomSessao == null) {
+			if (other.nomSessao != null)
+				return false;
+		} else if (!nomSessao.equals(other.nomSessao))
+			return false;
+		return true;
 	}
 	
 }

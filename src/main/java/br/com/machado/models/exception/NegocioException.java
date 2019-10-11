@@ -6,9 +6,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(HttpStatus.NOT_FOUND)
 public class NegocioException extends RuntimeException {
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -84988110022943674L;
 
 	public NegocioException() {}

@@ -26,6 +26,31 @@ public class Telefone {
  
 	@Enumerated(EnumType.STRING)
 	private ETipoUsoTelefone tpoUsoTelefone;
+	
+	public Telefone() {
+		
+	}
+	
+	public Telefone(int numDDI, int numDDD, long numTelefone, 
+			ETipoTelefone tpoTelefone, ETipoUsoTelefone tpoUsoTelefone) {
+		this.numDDI = numDDI;
+		this.numDDD = numDDD;
+		this.numTelefone = numTelefone;
+		this.tpoTelefone = tpoTelefone;
+		this.tpoUsoTelefone = tpoUsoTelefone;
+	}
+	
+	public boolean equals(Object o) {
+		if(!(o instanceof Telefone)) return false;
+		Telefone telefone = (Telefone)o;
+		return this.numDDI == telefone.numDDI
+				&& this.numDDD == telefone.numDDD
+				&& this.numTelefone == telefone.numTelefone
+				&& this.tpoTelefone == null && telefone.tpoTelefone == null ?
+						Boolean.TRUE : this.tpoTelefone.equals(telefone.tpoTelefone)
+				&& this.tpoUsoTelefone == null && this.tpoUsoTelefone == null ?
+						Boolean.TRUE : this.tpoUsoTelefone.equals(telefone.tpoUsoTelefone);
+	}
 
 	public Integer getNumDDI() {
 		return numDDI;

@@ -19,7 +19,6 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -29,8 +28,10 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import br.com.machado.models.audit.AuditModel;
 
 @Entity
-public class Livro extends AuditModel{
-	
+public class Livro extends AuditModel {
+
+	private static final long serialVersionUID = 3044107981508316174L;
+
 	@Id
 	@GeneratedValue(
 	    strategy= GenerationType.AUTO, 
@@ -124,6 +125,55 @@ public class Livro extends AuditModel{
 				+ ", desSinopse=" + this.desSinopse
 				+ ", nomAutor=" + this.nomAutor
 				+ "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((desSinopse == null) ? 0 : desSinopse.hashCode());
+		result = prime * result + ((desTituloLivro == null) ? 0 : desTituloLivro.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((nomAutor == null) ? 0 : nomAutor.hashCode());
+		result = prime * result + ((sessao == null) ? 0 : sessao.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Livro other = (Livro) obj;
+		if (desSinopse == null) {
+			if (other.desSinopse != null)
+				return false;
+		} else if (!desSinopse.equals(other.desSinopse))
+			return false;
+		if (desTituloLivro == null) {
+			if (other.desTituloLivro != null)
+				return false;
+		} else if (!desTituloLivro.equals(other.desTituloLivro))
+			return false;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		if (nomAutor == null) {
+			if (other.nomAutor != null)
+				return false;
+		} else if (!nomAutor.equals(other.nomAutor))
+			return false;
+		if (sessao == null) {
+			if (other.sessao != null)
+				return false;
+		} else if (!sessao.equals(other.sessao))
+			return false;
+		return true;
 	}
 	
 }
