@@ -1,0 +1,1310 @@
+{
+	"info": {
+		"_postman_id": "e639d01d-506b-41f7-a1b7-e124215c15d6",
+		"name": "springboot-jpa-restfull",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "inserir - 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomUsuario\":\"Marcos Vinicius Enrico Renan Martins\",\n\t\"datNascimento\":\"13/05/1994\",\n\t\"telefone\": {\n\t\t\"numDDI\": 55,\n\t\t\"numDDD\": 79,\n\t\t\"numTelefone\": 997207256,\n\t\t\"tpoTelefone\":\"CELULAR\",\n\t\t\"tpoUsoTelefone\":\"PESSOAL\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomUsuario\":\"Felipe César da Cunha\",\n\t\"datNascimento\":\"22/03/1970\",\n\t\"telefone\": {\n\t\t\"numDDI\": 55,\n\t\t\"numDDD\": 95,\n\t\t\"numTelefone\": 36602005,\n\t\t\"tpoTelefone\":\"FIXO\",\n\t\t\"tpoUsoTelefone\":\"COMERCIAL\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 3",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomUsuario\":\"Kaique Bento Arthur Peixoto\",\n\t\"datNascimento\":\"05/03/1968\",\n\t\"telefone\": {\n\t\t\"numDDI\": 55,\n\t\t\"numDDD\": 87,\n\t\t\"numTelefone\": 995149617,\n\t\t\"tpoTelefone\":\"CELULAR\",\n\t\t\"tpoUsoTelefone\":\"TRABALHO\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 4",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomUsuario\":\"Jaqueline Josefa Aparecida Assis\",\n\t\"datNascimento\":\"02/05/1972\",\n\t\"telefone\": {\n\t\t\"numDDI\": 55,\n\t\t\"numDDD\": 91,\n\t\t\"numTelefone\": 997234859,\n\t\t\"tpoTelefone\":\"CELULAR\",\n\t\t\"tpoUsoTelefone\":\"PESSOAL\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 5",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomUsuario\":\"Elaine Luzia da Conceição\",\n\t\"datNascimento\":\"19/09/1997\",\n\t\"telefone\": {\n\t\t\"numDDI\": 55,\n\t\t\"numDDD\": 96,\n\t\t\"numTelefone\": 994267023,\n\t\t\"tpoTelefone\":\"CELULAR\",\n\t\t\"tpoUsoTelefone\":\"TRABALHO\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 6",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomUsuario\":\"Liz Brenda Campos\",\n\t\"datNascimento\":\"09/10/1946\",\n\t\"telefone\": {\n\t\t\"numDDI\": 55,\n\t\t\"numDDD\": 11,\n\t\t\"numTelefone\": 38015645,\n\t\t\"tpoTelefone\":\"FIXO\",\n\t\t\"tpoUsoTelefone\":\"PESSOAL\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 7",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomUsuario\":\"Sophie Aparecida Rosa Aparício\",\n\t\"datNascimento\":\"15/03/1987\",\n\t\"telefone\": {\n\t\t\"numDDI\": 55,\n\t\t\"numDDD\": 98,\n\t\t\"numTelefone\": 37946760,\n\t\t\"tpoTelefone\":\"FIXO\",\n\t\t\"tpoUsoTelefone\":\"PESSOAL\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 8",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomUsuario\":\"Mariane Malu Eliane da Cunha\",\n\t\"datNascimento\":\"27/03/1953\",\n\t\"telefone\": {\n\t\t\"numDDI\": 55,\n\t\t\"numDDD\": 98,\n\t\t\"numTelefone\": 989517369,\n\t\t\"tpoTelefone\":\"CELULAR\",\n\t\t\"tpoUsoTelefone\":\"COMERCIAL\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarPorId - 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/1",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarPorId - 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/2",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarPorId - 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/3",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarPorId - 4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/4",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarPorId - 5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/5",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarPorId - 6",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/6",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarPorId - 7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/7",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarPorId - 8",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/8",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarPaginado - 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario?page=0&size=2&sort=criadoEm,asc",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "sort",
+									"value": "criadoEm,asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarPaginado - 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario?page=1&size=2&sort=criadoEm,asc",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "sort",
+									"value": "criadoEm,asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarPaginado - 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario?page=2&size=2&sort=criadoEm,asc",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "sort",
+									"value": "criadoEm,asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarPaginado - 4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario?page=3&size=2&sort=criadoEm,asc",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "3"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "sort",
+									"value": "criadoEm,asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar - 1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 7,\n    \"nomUsuario\": \"Sophie Aparecida Rosa Aparício\",\n    \"telefone\": {\n        \"numDDI\": 55,\n        \"numDDD\": 98,\n        \"numTelefone\": 37946760,\n        \"tpoTelefone\": \"FIXO\",\n        \"tpoUsoTelefone\": \"PESSOAL\"\n    },\n    \"datNascimento\": \"14/04/1987\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "sessao",
+			"item": [
+				{
+					"name": "inserir - 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomSessao\":\"Histórias do mundo\",\n\t\"desSessao\":\"Histórias de guerra, expansão e colonização pelo mundo\",\n\t\"desLocalizacao\":\"Corredor A\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomSessao\":\"Ficção ciêntifica\",\n\t\"desSessao\":\"Imaginação, criação, sonhos, milagres, invenções, tudo é possível\",\n\t\"desLocalizacao\":\"Corredor B\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 3",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomSessao\":\"Romance\",\n\t\"desSessao\":\"Duvido você não chorar e ser mais feliz depois desses livros\",\n\t\"desLocalizacao\":\"Corredor C\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 4",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomSessao\":\"Biografias\",\n\t\"desSessao\":\"Pensadores, filosofos ou apenas pessoas comuns que se tornaram grandes pelos seus pequenos atos\",\n\t\"desLocalizacao\":\"Corredor D\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar - 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao/1",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar - 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao/2",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar - 4",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 4,\n\t\"nomSessao\":\"Biografias\",\n\t\"desSessao\":\"Pensadores, filosofos ou apenas pessoas comuns que se tornaram grandes pelos seus pequenos atos\",\n\t\"desLocalizacao\":\"Corredor E\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarPaginado - 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao?page=0&size=2&sort=criadoEm,asc",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "sort",
+									"value": "criadoEm,asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarPaginado - 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao?page=1&size=2&sort=criadoEm,asc",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "sort",
+									"value": "criadoEm,asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletar - 4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao/4",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "livro",
+			"item": [
+				{
+					"name": "inserir - 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"desTituloLivro\": \"Independência do Brasil\",\n\t\"desSinopse\":\"A história nunca contada que você precisa saber\",\n\t\"nomAutor\":\"D. Pedro I\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao/1/livro",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao",
+								"1",
+								"livro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"desTituloLivro\": \"Peter Pan\",\n\t\"desSinopse\":\"Uma história de te fazer voar de alegria\",\n\t\"nomAutor\":\"Pan\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao/2/livro",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao",
+								"2",
+								"livro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 3",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"desTituloLivro\": \"Os miseraveis\",\n\t\"desSinopse\":\"Nada de miseraveis, apenas uma encenação de ricos tentando ter uma vida difícil\",\n\t\"nomAutor\":\"Um não miserável porque lucrou muito\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao/3/livro",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao",
+								"3",
+								"livro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir - 4",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"desTituloLivro\": \"Steve Jobs\",\n\t\"desSinopse\":\"Não tão job assim, muito menos boa pessoa, mas algúem tem que falar bem. Ainda mais depois que morre\",\n\t\"nomAutor\":\"Algum admirador nada secreto e muito suspeito\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/sessao/4/livro",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"sessao",
+								"4",
+								"livro"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "emprestimo",
+			"item": [
+				{
+					"name": "inserir - 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"datRetirada\":\"01/01/2019 08:00:00\",\n\t\"datDevolucao\":\"08/01/2019 17:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/1/emprestimo",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"1",
+								"emprestimo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar - 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/1/emprestimo/1",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"1",
+								"emprestimo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarPaginado - 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/emprestimo?page=0&size=2&sort=criadoEm,asc",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"emprestimo"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "sort",
+									"value": "criadoEm,asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Livro - 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/1/emprestimo/1/livro/1",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"1",
+								"emprestimo",
+								"1",
+								"livro",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Livro - 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://biblioteca-ue.herokuapp.com/api/usuario/1/emprestimo/1/livro/2",
+							"protocol": "https",
+							"host": [
+								"biblioteca-ue",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"1",
+								"emprestimo",
+								"1",
+								"livro",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
